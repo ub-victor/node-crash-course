@@ -17,3 +17,6 @@ global.setTimeout(() => {
 },3000);
 
 
+const int = setInterval(()=>{
+    console.log("In the interval")
+})
