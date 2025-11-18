@@ -4,5 +4,5 @@ const greet = (name) => {
     console.log(`Hello, ${name}!`)
 }
 
-greet.apply('mario');
+greet('mario');
 greet('yoshi');
