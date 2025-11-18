@@ -21,3 +21,6 @@ global.setTimeout(() => {
 const int = setInterval(()=>{
     console.log("In the interval")
 }, 1000);
+
+
+//7:23
