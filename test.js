@@ -1,8 +1,19 @@
-const name = 'mario';
+// const name = 'mario';
 
-const greet = (name) => {
-    console.log(`Hello, ${name}!`)
-}
+// const greet = (name) => {
+//     console.log(`Hello, ${name}!`)
+// }
 
-greet('mario');
-greet('yoshi');
+// greet('mario');
+// greet('yoshi');
+
+// Global object 
+
+// console.log(global);
+
+global.setTimeout(() => {
+    console.log('in the timeout');
+    
+},3000);
+
+
