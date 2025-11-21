@@ -16,6 +16,10 @@ console.log("Last line") // the readFile does not stop the program when it is wa
 
 // writing files
 
+fs.writeFile('/docs/blog1.txt', "Hello victoire , you're amazing");
+
+
+
 // directories
 
 // deleting files
