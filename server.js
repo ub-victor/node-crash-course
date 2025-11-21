@@ -5,6 +5,8 @@ const server = http.createServer((req, res)=>{
 
     res.setHeader('Content-Type', 'text/plain');
 
+    res.write('hello, ninja')
+
 });
 
 server.listen(3000, 'localhost', ()=>{
