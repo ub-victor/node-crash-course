@@ -19,7 +19,7 @@ const server = http.createServer((req, res)=>{
         
     }
 
-    fs.readFile('./views/index.html', (err, data)=>{
+    fs.readFile(path, (err, data)=>{
         if(err){
             console.log(err);
             res.end();
