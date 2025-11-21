@@ -9,6 +9,8 @@ const server = http.createServer((req, res)=>{
     // res.end();  
 
     res.setHeader('Content-Tyoe', 'text/html');
+    
+    res.write('<h1>I am Comming<h1/>');
 
 });
 
