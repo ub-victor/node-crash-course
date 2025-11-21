@@ -23,4 +23,7 @@ const int = setInterval(()=>{
 }, 1000);
 
 
-//7:23
+console.log(__dirname);
+console.log(__filename);
+
+// document is a window selector 
