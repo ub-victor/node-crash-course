@@ -13,3 +13,5 @@ readStream.on('data', (chuck) =>{
 */
 
 // piping
+
+readStream.pipe(writeStream);
