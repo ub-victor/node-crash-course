@@ -27,6 +27,8 @@ fs.writeFile('./docs/blog1.txt', "Ushindi Bihame Victoire , He is the bast , int
 
 
 // directories
+
+/*
 if(!fs.existsSync('./assets')){
     fs.mkdir('./assets', (err)=>{
     if(err){
@@ -45,5 +47,12 @@ if(!fs.existsSync('./assets')){
     })
 }
 
+*/
+
 
 // deleting files
+if(fs.existsSync('./docs/blog2.txt', (err)){
+    fs.unlink('./doc/blog2.txt', (errr)=>{
+        console.log(err)
+    })
+}
