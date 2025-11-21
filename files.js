@@ -1,3 +1,4 @@
+const { error } = require('console');
 const fs = require('fs');
 
 // reading files
@@ -26,5 +27,11 @@ fs.writeFile('./docs/blog1.txt', "Ushindi Bihame Victoire , He is the bast , int
 
 
 // directories
+
+fs.mkdir('./assets', (err)=>{
+    if(err){
+        console.log(err)
+    }
+})
 
 // deleting files
