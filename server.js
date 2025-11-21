@@ -8,6 +8,8 @@ const server = http.createServer((req, res)=>{
     // res.write('hello, ninja');
     // res.end();  
 
+    res.setHeader('Content-Tyoe', 'text/html');
+
 });
 
 server.listen(3000, 'localhost', ()=>{
