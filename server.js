@@ -11,6 +11,8 @@ const server = http.createServer((req, res)=>{
     res.setHeader('Content-Tyoe', 'text/html');
     
     res.write('<h1>I am Comming<h1/>');
+    res.write('<h3>I am Comming<h3/>');
+    res.end();
 
 });
 
