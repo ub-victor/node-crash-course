@@ -1,18 +1,10 @@
 const http = require('http');
+const fs = require('fs');
 
 const server = http.createServer((req, res)=>{
     console.log(req.url, req.method);
-
-    // This is for plain text
-    // res.setHeader('Content-Type', 'text/plain');
-    // res.write('hello, ninja');
-    // res.end();  
-
     res.setHeader('Content-Tyoe', 'text/html');
     
-    res.write('<h1>I am Comming<h1/>');
-    res.write('<h3>I am Comming<h3/>');
-    res.end();
 
 });
 
