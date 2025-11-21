@@ -14,7 +14,7 @@ const server = http.createServer((req, res)=>{
             path +=  'about.html';
             break;
         default:
-            path +=  'index.html';
+            path +=  '404.html';
             break;
         
     }
