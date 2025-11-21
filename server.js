@@ -6,6 +6,10 @@ const server = http.createServer((req, res)=>{
     res.setHeader('Content-Tyoe', 'text/html');
 
     let path = './views'
+    switch(req.url){
+        case '/':
+            path +=  'index.html'
+    }
 
     fs.readFile('./views/index.html', (err, data)=>{
         if(err){
