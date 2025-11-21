@@ -8,7 +8,8 @@ const server = http.createServer((req, res)=>{
     let path = './views'
     switch(req.url){
         case '/':
-            path +=  'index.html'
+            path +=  'index.html';
+            break;
     }
 
     fs.readFile('./views/index.html', (err, data)=>{
