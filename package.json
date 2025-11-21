@@ -1,0 +1,21 @@
+{
+  "name": "crash-course",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/ub-victor/node-crash-course#readme",
+  "bugs": {
+    "url": "https://github.com/ub-victor/node-crash-course/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ub-victor/node-crash-course.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  }
+}
