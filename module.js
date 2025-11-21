@@ -1,0 +1,1 @@
+const xyz = require('./people')
