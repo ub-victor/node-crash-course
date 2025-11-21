@@ -37,7 +37,7 @@ if(!fs.existsSync('./assets')){
     });
 
 }else{
-    fs.rmdir('.assets', (err)=>{
+    fs.rmdir('./assets', (err)=>{
         if(err){
             console.log(err)
         }
