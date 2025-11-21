@@ -10,6 +10,8 @@ fs.readFile('./docs/blog1.txt', (err, data)=>{
     console.log(data.toString());
 })
 
+console.log("Last line") // the readFile does not stop the program when it is waiting
+
 // writing files
 
 // directories
