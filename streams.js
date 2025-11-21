@@ -6,5 +6,6 @@ const writeStream = fs.createWriteStream('./docs/blog4.txt')
 readStream.on('data', (chuck) =>{
     console.log('\n----- NEW CHUNK -----');
     console.log(chuck); // No need to put stringfy as if will get uncode when the fole get in
-    writeStream('\nNEW CHUNCH\n')
+    writeStream.write('\nNEW CHUNCH\n')
+    writeStream.write(chuck)
 });
