@@ -27,13 +27,16 @@ fs.writeFile('./docs/blog1.txt', "Ushindi Bihame Victoire , He is the bast , int
 
 
 // directories
-if(!fs.existsSync('./assets'))
-fs.mkdir('./assets', (err)=>{
+if(!fs.existsSync('./assets')){
+    fs.mkdir('./assets', (err)=>{
     if(err){
         console.log(err)
     }
 
     console.log('folder created');
-})
+    })
+
+}
+
 
 // deleting files
