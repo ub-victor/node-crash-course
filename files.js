@@ -41,6 +41,7 @@ if(!fs.existsSync('./assets')){
         if(err){
             console.log(err)
         }
+        console.log('folder deleted')
     })
 }
 
