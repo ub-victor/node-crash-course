@@ -10,3 +10,7 @@ fs.readFile('./docs/blogs1.txt', (err, data)=>{
 })
 
 // writing files
+
+// directories
+
+// deleting files
