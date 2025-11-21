@@ -7,6 +7,12 @@ const server = http.createServer((req, res)=>{
     // lodash
     const num = _.random(0, 20);
     console.log(num);
+
+    const greet = _.once(() => {
+        console.log("Hello")
+    });
+    greet();
+    greet();
     //Set header content type
     res.setHeader('Content-Type', 'text/html');
 
