@@ -16,7 +16,7 @@ console.log("Last line") // the readFile does not stop the program when it is wa
 
 // writing files
 
-fs.writeFile('./docs/blog2.txt', "Ushindi Bihame Victoire , He is the bast , intelligent, clever bright ect ..", ()=>{
+fs.writeFile('./docs/blog1.txt', "Ushindi Bihame Victoire , He is the bast , intelligent, clever bright ect ..", ()=>{
     console.log('File was written')
 });
 
