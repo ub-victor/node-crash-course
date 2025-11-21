@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // reading files
-
+/*
 fs.readFile('./docs/blog1.txt', (err, data)=>{
     if(err){
         console.log(err);
@@ -11,6 +11,8 @@ fs.readFile('./docs/blog1.txt', (err, data)=>{
 })
 
 console.log("Last line") // the readFile does not stop the program when it is waiting
+
+*/
 
 // writing files
 
