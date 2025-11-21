@@ -34,8 +34,14 @@ if(!fs.existsSync('./assets')){
     }
 
     console.log('folder created');
-    })
+    });
 
+}else{
+    fs.rmdir('.assets', (err)=>{
+        if(err){
+            console.log(err)
+        }
+    })
 }
 
 
