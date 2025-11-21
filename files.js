@@ -6,4 +6,5 @@ fs.readFile('./docs/blogs1.txt', (err, data)=>{
     if(err){
         console.log(err);
     }
+    console.log(data);
 })
