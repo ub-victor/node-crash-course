@@ -8,3 +8,5 @@ fs.readFile('./docs/blogs1.txt', (err, data)=>{
     }
     console.log(data);
 })
+
+// writing files
