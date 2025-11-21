@@ -1,1 +1,1 @@
-const xyz = require('./people')
+const xyz = require('./people');
