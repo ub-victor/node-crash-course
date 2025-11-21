@@ -14,4 +14,4 @@ readStream.on('data', (chuck) =>{
 
 // piping
 
-readStream.pipe(writeStream);
+readStream.pipe(writeStream); // Automatically reads from readStream and writes to writeStream
