@@ -23,4 +23,4 @@ app.use((req, res)=>{
     res.status(404).sendFile('./views/404.html', {root: __dirname})
 })
 
-app.listen(3000)
+app.listen(3000);
