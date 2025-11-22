@@ -7,7 +7,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res)=>{
-    res.send("<h1>Let us go</h1>")
+    res.render()
 })
 
 app.get('/index', (req, res)=>{
