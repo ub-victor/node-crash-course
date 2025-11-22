@@ -6,7 +6,7 @@ app.get('/', (req, res)=>{
     res.send("<h1>Let us go</h1>")
 })
 
-app.get('/index.html', (req, res)=>{
+app.get('/index', (req, res)=>{
     // res.send("<h1>Let us go</h1>")
     res.sendFile('./views/index.html', {root: __dirname});
 })
@@ -18,6 +18,9 @@ app.get('/about', (req, res)=>{
 app.get('/about-us', (req, res)=>{
     res.redirect('/about')
 })
-
+// we use use for middleware
+app.use((req, res)=>{
+    res.sendFile('./views/404.html', {root: __dirname})
+})
 
 app.listen(3000)
