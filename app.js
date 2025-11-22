@@ -4,6 +4,8 @@ const app = express();
 
 // register view engine
 
+app.set('view engine', 'ejs');
+
 app.get('/', (req, res)=>{
     res.send("<h1>Let us go</h1>")
 })
