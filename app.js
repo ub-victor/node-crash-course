@@ -7,7 +7,9 @@ const app = express();
 app.listen(3000);
 
 // register view engine
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs'); // set ejs as the view engine
+// then how is now the files to served are in views ? ans: because by default express looks for a folder named 'views' for the template files
+// if views folder is different than 'views', we can set it like this:
 // app.set('views', 'myviews');
 
 app.get('/', (req, res) => {
@@ -20,7 +22,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-  res.render('about', { title: 'About' });
+  res.render('about', { title: 'About' }); // render the about.ejs file , it took views folder by default because of ejs view engine
 });
 
 app.get('/blogs/create', (req, res) => {
