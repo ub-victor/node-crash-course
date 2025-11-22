@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     {title: 'Mario finds stars', snippet: 'Lorem ipsum dolor sit amet consectetur'},
     {title: 'How to defeat bowser', snippet: 'Lorem ipsum dolor sit amet consectetur'},
   ];
-  res.render('index', { title: 'Home', blogs }); // render the index.ejs file
+  res.render('index', { title: 'Home', blogs }); // render the index.ejs file, {} has the data to be passed to the template
 });
 
 app.get('/about', (req, res) => {
