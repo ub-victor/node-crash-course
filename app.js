@@ -7,10 +7,10 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res)=>{
-    res.render()
+    res.render('index')
 })
 
-app.get('/index', (req, res)=>{
+app.get('/about', (req, res)=>{
     // res.send("<h1>Let us go</h1>")
     res.sendFile('./views/index.html', {root: __dirname});
 })
