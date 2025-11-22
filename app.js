@@ -20,7 +20,7 @@ app.get('/about-us', (req, res)=>{
 })
 // we use use for middleware
 app.use((req, res)=>{
-    res.sendFile('./views/404.html', {root: __dirname})
+    res.status(404).sendFile('./views/404.html', {root: __dirname})
 })
 
 app.listen(3000)
