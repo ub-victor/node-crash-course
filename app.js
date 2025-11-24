@@ -7,6 +7,7 @@ const app = express();
 // listen for requests
 app.listen(3000);
 
+app.use(morgan('dev'));
 
 // register view engine
 app.set('view engine', 'ejs'); // set ejs as the view engine
