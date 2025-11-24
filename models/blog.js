@@ -9,5 +9,9 @@ const blogSchema = new Schema({
     snippet: {
         type: String,
         required: true
+    },
+    body: {
+        type: String,
+        require: true
     }
 })
