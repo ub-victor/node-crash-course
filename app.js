@@ -8,12 +8,6 @@ const app = express();
 app.listen(3000);
 
 
-app.use((req, res, next) => {
- 
-  console.log('In the next middleware');
-  next();
-});
-
 // register view engine
 app.set('view engine', 'ejs'); // set ejs as the view engine
 // then how is now the files to served are in views ? ans: because by default express looks for a folder named 'views' for the template files
