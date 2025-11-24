@@ -8,7 +8,7 @@ const app = express();
 //connect to mongodb
 const dbURI = 'mongodb+srv://victoire:victoire@node.65il9u7.mongodb.net/node';
 mongoose.connect(dbURI)
-  .then(() => app.listen(3000))
+  .then(() => app.listen(3000), console.log("db connected"))
   .catch((err) => console.log(err));
 
 
