@@ -6,6 +6,14 @@ const app = express();
 // listen for requests
 app.listen(3000);
 
+app.use((req, res, next) => {
+  console.log('new request made:');
+  console.log('host: ', req.hostname);
+  console.log('path: ', req.path);
+  console.log('method: ', req.method);
+  next();
+});
+
 // register view engine
 app.set('view engine', 'ejs'); // set ejs as the view engine
 // then how is now the files to served are in views ? ans: because by default express looks for a folder named 'views' for the template files
@@ -32,4 +40,4 @@ app.get('/blogs/create', (req, res) => {
 // 404 page
 app.use((req, res) => {
   res.status(404).render('404', { title: '404' });
-});
+}); 
