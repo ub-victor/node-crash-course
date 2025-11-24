@@ -7,6 +7,9 @@ const app = express();
 // listen for requests
 app.listen(3000);
 
+// middleware & static files
+app.use(express.static('public'));
+
 app.use(morgan('dev'));
 
 // register view engine
