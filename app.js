@@ -8,11 +8,9 @@ const app = express();
 //connect to mongodb
 const dbURI = 'mongodb+srv://victoire:victoire@node.65il9u7.mongodb.net/node';
 mongoose.connect(dbURI)
-  .then(() => console.log("connected to db"))
+  .then(() => app.listen(3000))
   .catch((err) => console.log(err));
 
-// listen for requests
-app.listen(3000);
 
 // middleware & static files
 app.use(express.static('public'));
@@ -46,3 +44,5 @@ app.get('/blogs/create', (req, res) => {
 app.use((req, res) => {
   res.status(404).render('404', { title: '404' });
 });
+
+//9  13min
