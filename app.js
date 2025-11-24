@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 const app = express();
 
 //connect to mongodb
-const dbURI = 'mongodb+srv://victoire:victoire@node.65il9u7.mongodb.net/';
+const dbURI = 'mongodb+srv://victoire:victoire@node.65il9u7.mongodb.net/node';
 mongoose.connect(dbURI);
 
 // listen for requests
