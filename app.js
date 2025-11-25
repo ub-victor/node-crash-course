@@ -20,6 +20,7 @@ app.use(express.static('public'));
 app.use(morgan('dev'));
 
 //manual way
+/*
 app.get('/add-blog', (req, res)=>{
   const blog = new Blog({
     title: 'New song',
@@ -34,6 +35,8 @@ app.get('/add-blog', (req, res)=>{
       console.log(err);
     })
 })
+
+*/
 
 // register view engine
 app.set('view engine', 'ejs'); // set ejs as the view engine
