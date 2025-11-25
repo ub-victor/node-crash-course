@@ -22,7 +22,7 @@ app.use(morgan('dev'));
 app.get('/add-blog', (req, res)=>{
   const blog = new Blog({
     title: 'New song',
-    snippet: "let us do it",
+    snippet: "let us  do it",
     body: 'more about it'
   });
   blog.save()
