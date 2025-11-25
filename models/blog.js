@@ -15,3 +15,5 @@ const blogSchema = new Schema({
         require: true
     }
 }, {timestamps: true})
+
+const Blog = mongoose.model('Blog');
