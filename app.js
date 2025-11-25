@@ -18,7 +18,7 @@ app.use(express.static('public'));
 // morgan middleware for logging , it shows in the terminal the requests made
 app.use(morgan('dev'));
 
-
+app.
 
 // register view engine
 app.set('view engine', 'ejs'); // set ejs as the view engine
