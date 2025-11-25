@@ -18,6 +18,8 @@ app.use(express.static('public'));
 // morgan middleware for logging , it shows in the terminal the requests made
 app.use(morgan('dev'));
 
+
+
 // register view engine
 app.set('view engine', 'ejs'); // set ejs as the view engine
 // then how is now the files to served are in views ? ans: because by default express looks for a folder named 'views' for the template files
