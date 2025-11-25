@@ -58,6 +58,8 @@ app.get('/about', (req, res) => {
   res.render('about', { title: 'About' }); // render the about.ejs file , it took views folder by default because of ejs view engine
 });
 
+//blog routes
+
 app.get('/blogs/create', (req, res) => {
   res.render('create', { title: 'Create a new blog' });
 });
