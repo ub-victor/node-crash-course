@@ -56,9 +56,9 @@ app.get('/about', (req, res) => {
 //blog routes
 
 app.get('/blogs', (req, res)=>{ // this route will fetch all the blogs from the database
-  Blog.find()
-    .then((result)=>{ 
-      res.render('index', { title: 'All Blogs', blogs: result });
+  Blog.find() // fetch all the blogs
+    .then((result)=>{ // result contains all the blogs
+      res.render('index', { title: 'All Blogs', blogs: result }); // render the index.ejs file and pass the blogs to it
     })
     .catch((err)=>{
       console.log(err);
