@@ -19,7 +19,20 @@ app.use(express.static('public'));
 // morgan middleware for logging , it shows in the terminal the requests made
 app.use(morgan('dev'));
 
-app.
+app.get('/add-blog', (req, res)=>{
+  const blog = new Blog({
+    title: 'New song',
+    snippet: "let us do it",
+    body: 'more about it'
+  });
+  blog.save()
+    .then((result)=>{
+      res.send(result)
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
+})
 
 // register view engine
 app.set('view engine', 'ejs'); // set ejs as the view engine
