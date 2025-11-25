@@ -58,7 +58,9 @@ app.get('/about', (req, res) => {
 app.get('/blogs', (req, res)=>{
   Blog.find()
     .then((result)=>{
-      
+    })
+    .catch((err)=>{
+      console.log(err);
     })
 })
 
