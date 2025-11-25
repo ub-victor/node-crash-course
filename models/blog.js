@@ -14,6 +14,8 @@ const blogSchema = new Schema({
         type: String,
         require: true
     }
-}, {timestamps: true})
+}, {timestamps: true});
 
-const Blog = mongoose.model('Blog'); 
+
+
+const Blog = mongoose.model('Blog', blogSchema); 
