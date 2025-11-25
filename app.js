@@ -60,6 +60,8 @@ app.get('/about', (req, res) => {
 
 //blog routes
 
+
+
 app.get('/blogs/create', (req, res) => {
   res.render('create', { title: 'Create a new blog' });
 });
