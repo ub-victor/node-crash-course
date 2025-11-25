@@ -15,6 +15,7 @@ mongoose.connect(dbURI)
 // middleware & static files
 app.use(express.static('public'));
 
+// morgan middleware for logging , it shows in the terminal the requests made
 app.use(morgan('dev'));
 
 // register view engine
