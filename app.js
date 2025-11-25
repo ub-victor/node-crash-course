@@ -55,7 +55,12 @@ app.get('/about', (req, res) => {
 
 //blog routes
 
-app.get('/blogs')
+app.get('/blogs', (req, res)=>{
+  Blog.find()
+    .then((result)=>{
+      
+    })
+})
 
 
 app.get('/blogs/create', (req, res) => {
