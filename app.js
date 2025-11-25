@@ -44,6 +44,7 @@ app.set('view engine', 'ejs'); // set ejs as the view engine
 // if views folder is different than 'views', we can set it like this:
 // app.set('views', 'myviews');
 
+// routes
 app.get('/', (req, res) => {
   const blogs = [
     {title: 'Yoshi finds eggs', snippet: 'Lorem ipsum dolor sit amet consectetur'},
