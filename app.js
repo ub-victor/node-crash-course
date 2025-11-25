@@ -60,6 +60,7 @@ app.get('/about', (req, res) => {
 
 //blog routes
 
+app.get('/blogs')
 
 
 app.get('/blogs/create', (req, res) => {
