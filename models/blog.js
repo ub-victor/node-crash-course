@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const blogSchema = new Schema({
     title: {
         type: String,
-        required: tue
+        required: true
     },
     snippet: {
         type: String,
@@ -12,7 +12,7 @@ const blogSchema = new Schema({
     },
     body: {
         type: String,
-        require: true
+        required: true
     }
 }, {timestamps: true});
 
