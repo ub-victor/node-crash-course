@@ -46,12 +46,7 @@ app.set('view engine', 'ejs'); // set ejs as the view engine
 
 // routes
 app.get('/', (req, res) => {
-  const blogs = [
-    {title: 'Yoshi finds eggs', snippet: 'Lorem ipsum dolor sit amet consectetur'},
-    {title: 'Mario finds stars', snippet: 'Lorem ipsum dolor sit amet consectetur'},
-    {title: 'How to defeat bowser', snippet: 'Lorem ipsum dolor sit amet consectetur'},
-  ];
-  res.render('index', { title: 'Home', blogs }); // render the index.ejs file, {} has the data to be passed to the template
+  res.redirect('/blogs')
 });
 
 app.get('/about', (req, res) => {
