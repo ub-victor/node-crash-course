@@ -19,6 +19,7 @@ app.use(express.static('public'));
 // morgan middleware for logging , it shows in the terminal the requests made
 app.use(morgan('dev'));
 
+//manual way
 app.get('/add-blog', (req, res)=>{
   const blog = new Blog({
     title: 'New song',
