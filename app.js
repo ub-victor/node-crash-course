@@ -16,6 +16,9 @@ mongoose.connect(dbURI)
 // middleware & static files
 app.use(express.static('public'));
 
+// to parse urlencoded form data
+app.use(express.urlencoded({ extended: true })); // this will help to get the form data from the request body
+
 // morgan middleware for logging , it shows in the terminal the requests made
 app.use(morgan('dev'));
 
@@ -65,7 +68,9 @@ app.get('/blogs', (req, res)=>{ // this route will fetch all the blogs from the 
     })
 })
 
-app.post
+app.post('/blogs', (req, res)=>{
+
+})
 
 app.get('/blogs/create', (req, res) => {
   res.render('create', { title: 'Create a new blog' });
