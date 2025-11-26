@@ -69,6 +69,7 @@ app.get('/blogs', (req, res)=>{ // this route will fetch all the blogs from the 
 })
 
 app.post('/blogs', (req, res)=>{
+  console.log(req.body)
 
 })
 
