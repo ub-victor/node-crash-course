@@ -78,7 +78,6 @@ app.post('/blogs', (req, res)=>{
     .catch((err)=>{
       console.log(err);
     })
-
 })
 
 app.get('/blogs/create', (req, res) => {
