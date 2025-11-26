@@ -70,7 +70,14 @@ app.get('/blogs', (req, res)=>{ // this route will fetch all the blogs from the 
 
 app.post('/blogs', (req, res)=>{
   // console.log(req.body) // req.body contains the form data so the body parser middleware is used to parse the form data which mean the body is the defined in the form 
-  
+  const blog = new Blog(req.body); // create a new blog using the form data
+  blog.save() // save the blog to the database
+    .then((result)=>{
+      res.redirect('/blogs') // redirect to the /blogs route to see the new blog
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
 
 })
 
