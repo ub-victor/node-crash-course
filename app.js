@@ -80,6 +80,17 @@ app.post('/blogs', (req, res)=>{
     })
 })
 
+app.get('/blogs/:id', (req, res)=>{
+  const id = req.params.id; // get the id from the url
+  Blog.findById(id) // find the blog by id
+    .then((result)=>{
+      res.render('details', { title: 'Blog Details', blog: result }) // render the details.ejs file and pass the blog to it
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
+})
+
 app.get('/blogs/create', (req, res) => {
   res.render('create', { title: 'Create a new blog' });
 });
