@@ -65,6 +65,7 @@ app.get('/blogs', (req, res)=>{ // this route will fetch all the blogs from the 
     })
 })
 
+app.post
 
 app.get('/blogs/create', (req, res) => {
   res.render('create', { title: 'Create a new blog' });
