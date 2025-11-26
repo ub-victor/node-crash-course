@@ -69,7 +69,7 @@ app.get('/blogs', (req, res)=>{ // this route will fetch all the blogs from the 
 })
 
 app.post('/blogs', (req, res)=>{
-  console.log(req.body)
+  console.log(req.body) // req.body contains the form data so the body parser middleware is used to parse the form data which mean the body is the defined in the form 
 
 })
 
