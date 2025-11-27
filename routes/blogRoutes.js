@@ -3,7 +3,7 @@ const Blog = require('../models/blog');
 const router = express.Router(); 
 
 
-router.get('/blogs/create', (req, res) => {
+router.get('/create', (req, res) => {
   res.render('create', { title: 'Create a new blog' });
 });
 
@@ -49,10 +49,6 @@ router.delete('/:id', (req, res) => {
     .catch(err => {
       console.log(err);
     });
-});
-
-router.get('/create', (req, res) => {
-  res.render('create', { title: 'Create a new blog' });
 });
 
 
