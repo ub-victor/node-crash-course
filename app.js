@@ -1,7 +1,6 @@
 const express = require('express');
 const morgan = require('morgan'); // it is a middleware for logging requests, it allows us to see the requests made to the server in the terminal
 const mongoose = require('mongoose');
-const Blog = require('./models/blog');
 const blogRoutes = require('./routes/blogRoutes');
 
 // express app

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const blogsRoutes = require('./routes/blogRoutes');
+const Blog = require('./models/blog');
 
 router.get('/blogs', (req, res)=>{ // this route will fetch all the blogs from the database
   Blog.find().sort({ createdAt: -1 }) // fetch all the blogs from the database and sort them in descending order of creation time
