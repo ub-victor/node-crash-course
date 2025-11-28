@@ -54,7 +54,7 @@ const blog_delete = (req, res) => {
 
 
 
-module.exports = {
+module.exports = { 
     blog_index,
     blog_details,
     blog_create_get,
