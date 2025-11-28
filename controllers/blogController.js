@@ -25,6 +25,8 @@ const blog_details = (req, res)=>{
 
 
 
+
+
 module.exports = {
     blog_index,
     blog_details
