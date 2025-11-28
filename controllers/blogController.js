@@ -22,7 +22,11 @@ const blog_details = (req, res)=>{ // this route will handle the form submission
     .catch((err)=>{
       console.log(err);
     })
+}
+
+
 
 module.exports = {
-    blog_index
+    blog_index,
+    blog_details
 };
