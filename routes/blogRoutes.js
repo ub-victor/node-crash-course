@@ -8,13 +8,7 @@ router.get('/create', (req, res) => {
 });
 
 router.get('/', (req, res)=>{ // this route will fetch all the blogs from the database
-  Blog.find().sort({ createdAt: -1 }) // fetch all the blogs from the database and sort them in descending order of creation time
-    .then((result)=>{ // result contains all the blogs
-      res.render('index', { title: 'All Blogs', blogs: result }) // render the index.ejs file and pass the blogs to it, the render means send the file to the client
-    })
-    .catch((err)=>{
-      console.log(err);
-    })
+  
 })
 
 router.post('/', (req, res)=>{ // this route will handle the form submission to create a new blog
