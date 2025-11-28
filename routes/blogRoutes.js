@@ -7,9 +7,7 @@ router.get('/create', (req, res) => {
   res.render('create', { title: 'Create a new blog' });
 });
 
-router.get('/', (req, res)=>{ // this route will fetch all the blogs from the database
-  
-})
+router.get('/', blog_index);
 
 router.post('/', (req, res)=>{ // this route will handle the form submission to create a new blog
   // console.log(req.body) // req.body contains the form data so the body parser middleware is used to parse the form data which mean the body is the defined in the form 

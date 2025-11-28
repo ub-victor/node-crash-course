@@ -1,4 +1,5 @@
-// blog_index, bloog_details, blog_create_get, blog_create_post, blog_delete
+const Blog = require('../models/blog');
+// blog_index, blog_details, blog_create_get, blog_create_post, blog_delete
 
 const blog_index = (req, res) => {
     Blog.find().sort({ createdAt: -1 }) // fetch all the blogs from the database and sort them in descending order of creation time
@@ -9,3 +10,10 @@ const blog_index = (req, res) => {
       console.log(err);
     })
 }
+
+
+const 
+
+module.exports = {
+    blog_index
+};
