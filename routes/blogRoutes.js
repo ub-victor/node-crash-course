@@ -2,9 +2,7 @@ const express = require('express');
 const router = express.Router(); 
 
 
-router.get('/create', (req, res) => {
-  res.render('create', { title: 'Create a new blog' });
-});
+router.get('/create', blog_create_get);
 
 router.get('/', blog_index);
 
